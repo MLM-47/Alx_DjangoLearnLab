@@ -20,3 +20,9 @@ def main():
 
 if __name__ == '__main__':
     main()
+
+from bookshelf.models import Book
+
+# Create
+book = Book.objects.create(title="1984", author="George Orwell", publication_year=1949)
+book
